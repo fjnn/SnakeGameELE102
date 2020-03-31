@@ -42,6 +42,7 @@ namespace SnakeGame
 
         }
 
+
         private void StartButton_Click(object sender, EventArgs e)
         {
             if (port.IsOpen)
@@ -65,10 +66,10 @@ namespace SnakeGame
         {
             port = new SerialPort("COM21", 9600, Parity.None, 8, StopBits.One);
             port.Open();
+            port.DataReceived += new SerialDataReceivedEventHandler(port_ReceivedData);
 
             ConnectionStatusLabel.Text = "Connected";
         }
-
 
         // Receive Arduino Data
         private void port_ReceivedData(object sender, SerialDataReceivedEventArgs e)
