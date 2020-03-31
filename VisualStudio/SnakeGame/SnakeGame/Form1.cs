@@ -15,6 +15,9 @@ namespace SnakeGame
     public partial class Form1 : Form
     {
 
+        SerialPort port;
+        string receivedData;
+
 
         private List<Circle> Snake = new List<Circle>();
         private Circle food = new Circle();
@@ -33,18 +36,37 @@ namespace SnakeGame
             // Serial Connection
             ConnectArduino();
 
-            // Start New game
-            StartGame();
+            if (port.IsOpen)
+                // Start New game
+                StartGame();
+
         }
 
-        SerialPort port;
-        string receivedData;
+        private void StartButton_Click(object sender, EventArgs e)
+        {
+            if (port.IsOpen)
+                // Start New game
+                StartGame();
+        }
+
+        private void ConnectButton_Click(object sender, EventArgs e)
+        {
+            ConnectArduino();
+        }
+
+        private void DisconnectButton_Click(object sender, EventArgs e)
+        {
+            port.Close();
+            ConnectionStatusLabel.Text = "Disconnected";
+        }
 
         // Serial Connection
         private void ConnectArduino()
         {
             port = new SerialPort("COM21", 9600, Parity.None, 8, StopBits.One);
             port.Open();
+
+            ConnectionStatusLabel.Text = "Connected";
         }
 
 
@@ -167,7 +189,7 @@ namespace SnakeGame
 
             else
             {
-                string gameOver = "Game over\nYour final score is:" + Settings.Score + "\nPress ENTER to try again";
+                string gameOver = "Game over\nYour final score is:" + Settings.Score + "\nPress START button to try again";
                 LabelGameOver.Text = gameOver;
                 LabelGameOver.Visible = true;
             }
