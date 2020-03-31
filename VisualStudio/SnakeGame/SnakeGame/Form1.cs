@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO.Ports;
 
 namespace SnakeGame
 {
     public partial class Form1 : Form
     {
+
 
         private List<Circle> Snake = new List<Circle>();
         private Circle food = new Circle();
@@ -27,8 +29,18 @@ namespace SnakeGame
             gameTimer.Tick += UpdateScreen;
             gameTimer.Start();
 
+            // Serial Connection
+            ConnectArduino();
+
             // Start New game
             StartGame();
+        }
+
+        private void ConnectArduino()
+        {
+            SerialPort port = new SerialPort("COM19", 9600, Parity.None, 8, StopBits.One);
+            port.Open();
+
         }
 
 

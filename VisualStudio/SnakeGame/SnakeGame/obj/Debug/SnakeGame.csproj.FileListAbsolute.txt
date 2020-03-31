@@ -8,3 +8,13 @@ D:\VS_WS\SnakeGame\SnakeGame\bin\Debug\SnakeGame.exe
 D:\VS_WS\SnakeGame\SnakeGame\bin\Debug\SnakeGame.pdb
 D:\VS_WS\SnakeGame\SnakeGame\obj\Debug\SnakeGame.exe
 D:\VS_WS\SnakeGame\SnakeGame\obj\Debug\SnakeGame.pdb
+D:\GitKraken\SnakeGameELE102\VisualStudio\SnakeGame\SnakeGame\bin\Debug\SnakeGame.exe.config
+D:\GitKraken\SnakeGameELE102\VisualStudio\SnakeGame\SnakeGame\bin\Debug\SnakeGame.exe
+D:\GitKraken\SnakeGameELE102\VisualStudio\SnakeGame\SnakeGame\bin\Debug\SnakeGame.pdb
+D:\GitKraken\SnakeGameELE102\VisualStudio\SnakeGame\SnakeGame\obj\Debug\SnakeGame.csprojAssemblyReference.cache
+D:\GitKraken\SnakeGameELE102\VisualStudio\SnakeGame\SnakeGame\obj\Debug\SnakeGame.Form1.resources
+D:\GitKraken\SnakeGameELE102\VisualStudio\SnakeGame\SnakeGame\obj\Debug\SnakeGame.Properties.Resources.resources
+D:\GitKraken\SnakeGameELE102\VisualStudio\SnakeGame\SnakeGame\obj\Debug\SnakeGame.csproj.GenerateResource.cache
+D:\GitKraken\SnakeGameELE102\VisualStudio\SnakeGame\SnakeGame\obj\Debug\SnakeGame.csproj.CoreCompileInputs.cache
+D:\GitKraken\SnakeGameELE102\VisualStudio\SnakeGame\SnakeGame\obj\Debug\SnakeGame.exe
+D:\GitKraken\SnakeGameELE102\VisualStudio\SnakeGame\SnakeGame\obj\Debug\SnakeGame.pdb
