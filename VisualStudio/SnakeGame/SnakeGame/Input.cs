@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace SnakeGame
 {
     class Input
@@ -22,10 +23,12 @@ namespace SnakeGame
 
             return (bool)keyTable[key];
         }
+
         // Detect if a keyboard button is pressed
         public static void ChangeState(Keys key, bool state)
         {
             keyTable[key] = state;
         }
+
     }
 }

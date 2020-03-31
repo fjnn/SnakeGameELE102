@@ -34,6 +34,7 @@
             this.LabelScore = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.LabelGameOver = new System.Windows.Forms.Label();
+            this.ButtonBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbCanvas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,11 +78,19 @@
             this.LabelGameOver.Text = "label1";
             this.LabelGameOver.Visible = false;
             // 
+            // ButtonBox
+            // 
+            this.ButtonBox.Location = new System.Drawing.Point(662, 402);
+            this.ButtonBox.Name = "ButtonBox";
+            this.ButtonBox.Size = new System.Drawing.Size(100, 20);
+            this.ButtonBox.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ButtonBox);
             this.Controls.Add(this.LabelGameOver);
             this.Controls.Add(this.LabelScore);
             this.Controls.Add(this.Score);
@@ -103,6 +112,7 @@
         private System.Windows.Forms.Label LabelScore;
         private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.Label LabelGameOver;
+        private System.Windows.Forms.TextBox ButtonBox;
     }
 }
 

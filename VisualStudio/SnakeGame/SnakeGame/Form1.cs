@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 
+
 namespace SnakeGame
 {
     public partial class Form1 : Form
@@ -36,13 +37,26 @@ namespace SnakeGame
             StartGame();
         }
 
+        SerialPort port;
+        string receivedData;
+
+        // Serial Connection
         private void ConnectArduino()
         {
-            SerialPort port = new SerialPort("COM19", 9600, Parity.None, 8, StopBits.One);
+            port = new SerialPort("COM21", 9600, Parity.None, 8, StopBits.One);
             port.Open();
-
         }
 
+
+        // Receive Arduino Data
+        private void port_ReceivedData(object sender, SerialDataReceivedEventArgs e)
+        {
+            string receivedData = port.ReadLine();
+            this.Invoke((MethodInvoker)delegate
+            {
+                ButtonBox.Text = receivedData;
+            });
+        }
 
         private void StartGame()
         {
@@ -89,13 +103,27 @@ namespace SnakeGame
 
             else
             {
-                if (Input.KeyPressed(Keys.Right) && Settings.direction != Direction.Left)
+                /*               
+                               if (Input.KeyPressed(Keys.Right) && Settings.direction != Direction.Left)
+                                   Settings.direction = Direction.Right;
+                               else if (Input.KeyPressed(Keys.Left) && Settings.direction != Direction.Right)
+                                   Settings.direction = Direction.Left;
+                               else if (Input.KeyPressed(Keys.Up) && Settings.direction != Direction.Down)
+                                   Settings.direction = Direction.Up;
+                               else if (Input.KeyPressed(Keys.Down) && Settings.direction != Direction.Up)
+                                   Settings.direction = Direction.Down;
+               */
+
+
+                if (int.TryParse(ButtonBox.Text, out int result))
+                    result = Convert.ToInt32(ButtonBox.Text);
+                if (result == 3 && Settings.direction != Direction.Left)
                     Settings.direction = Direction.Right;
-                else if (Input.KeyPressed(Keys.Left) && Settings.direction != Direction.Right)
+                else if (result == 5 && Settings.direction != Direction.Right)
                     Settings.direction = Direction.Left;
-                else if (Input.KeyPressed(Keys.Up) && Settings.direction != Direction.Down)
+                else if (result == 2 && Settings.direction != Direction.Down)
                     Settings.direction = Direction.Up;
-                else if (Input.KeyPressed(Keys.Down) && Settings.direction != Direction.Up)
+                else if (result == 4 && Settings.direction != Direction.Up)
                     Settings.direction = Direction.Down;
 
                 MovePlayer();
