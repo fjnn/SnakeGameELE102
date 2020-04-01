@@ -138,8 +138,8 @@ namespace Arduino_Serial_Advanced
 
         private void ReceivedSerialHandler(object sender, SerialDataReceivedEventArgs e)
         {
-            SerialPort sp = (SerialPort)sender;
-            double voltage = float.Parse(sp.ReadExisting());
+            double voltage = Convert.ToDouble(port.ReadLine());
+
             this.Invoke((MethodInvoker)delegate
             {
                 progressBar1.Value = Convert.ToInt16(voltage);
