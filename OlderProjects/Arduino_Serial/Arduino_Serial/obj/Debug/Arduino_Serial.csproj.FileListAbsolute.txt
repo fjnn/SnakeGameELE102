@@ -1,0 +1,10 @@
+D:\VS_WS\Arduino_Serial\Arduino_Serial\bin\Debug\Arduino_Serial.exe.config
+D:\VS_WS\Arduino_Serial\Arduino_Serial\bin\Debug\Arduino_Serial.exe
+D:\VS_WS\Arduino_Serial\Arduino_Serial\bin\Debug\Arduino_Serial.pdb
+D:\VS_WS\Arduino_Serial\Arduino_Serial\obj\Debug\Arduino_Serial.csprojAssemblyReference.cache
+D:\VS_WS\Arduino_Serial\Arduino_Serial\obj\Debug\Arduino_Serial.Form1.resources
+D:\VS_WS\Arduino_Serial\Arduino_Serial\obj\Debug\Arduino_Serial.Properties.Resources.resources
+D:\VS_WS\Arduino_Serial\Arduino_Serial\obj\Debug\Arduino_Serial.csproj.GenerateResource.cache
+D:\VS_WS\Arduino_Serial\Arduino_Serial\obj\Debug\Arduino_Serial.csproj.CoreCompileInputs.cache
+D:\VS_WS\Arduino_Serial\Arduino_Serial\obj\Debug\Arduino_Serial.exe
+D:\VS_WS\Arduino_Serial\Arduino_Serial\obj\Debug\Arduino_Serial.pdb

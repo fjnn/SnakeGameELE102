@@ -1,0 +1,10 @@
+D:\VS_WS\Arduino_Serial_Advanced\Arduino_Serial_Advanced\bin\Debug\Arduino_Serial_Advanced.exe.config
+D:\VS_WS\Arduino_Serial_Advanced\Arduino_Serial_Advanced\bin\Debug\Arduino_Serial_Advanced.exe
+D:\VS_WS\Arduino_Serial_Advanced\Arduino_Serial_Advanced\bin\Debug\Arduino_Serial_Advanced.pdb
+D:\VS_WS\Arduino_Serial_Advanced\Arduino_Serial_Advanced\obj\Debug\Arduino_Serial_Advanced.csprojAssemblyReference.cache
+D:\VS_WS\Arduino_Serial_Advanced\Arduino_Serial_Advanced\obj\Debug\Arduino_Serial_Advanced.Form1.resources
+D:\VS_WS\Arduino_Serial_Advanced\Arduino_Serial_Advanced\obj\Debug\Arduino_Serial_Advanced.Properties.Resources.resources
+D:\VS_WS\Arduino_Serial_Advanced\Arduino_Serial_Advanced\obj\Debug\Arduino_Serial_Advanced.csproj.GenerateResource.cache
+D:\VS_WS\Arduino_Serial_Advanced\Arduino_Serial_Advanced\obj\Debug\Arduino_Serial_Advanced.csproj.CoreCompileInputs.cache
+D:\VS_WS\Arduino_Serial_Advanced\Arduino_Serial_Advanced\obj\Debug\Arduino_Serial_Advanced.exe
+D:\VS_WS\Arduino_Serial_Advanced\Arduino_Serial_Advanced\obj\Debug\Arduino_Serial_Advanced.pdb
